@@ -18,9 +18,9 @@ Getting Started
 
     Clone the Repository:
 
-    bash git clone https://github.com/abbisQQ/Todo-App.git
+    git clone https://github.com/abbisQQ/Todo-App.git
     
-    cd the-repository
+    cd Todo-App
     
     Build and Start the Containers:
     docker-compose up --build
