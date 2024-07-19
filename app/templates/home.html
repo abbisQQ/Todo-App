@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <a href="{{ url_for('create_todo') }}">Create a New Todo</a>
+    <ul>
+        {% for todo in todos %}
+            <li>
+                <strong>{{ todo.name }}</strong><br>
+                Description: {{ todo.description }}<br>
+                Due Date: {{ todo.due_date }}<br>
+                <a href="{{ url_for('delete_todo', todo_id=todo.id) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

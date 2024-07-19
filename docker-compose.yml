@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    build:
+      context: ./Database
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: my_strong_password
+      MYSQL_DATABASE: applicationdb
+      MYSQL_USER: applicationUser
+      MYSQL_PASSWORD: my_user_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - app-network
+
+  web:
+    build:
+      context: ./app
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db-data:
