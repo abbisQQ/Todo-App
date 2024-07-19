@@ -8,27 +8,6 @@ Features
     View Last Todo: Show the most recently added todo.
     Delete Todo: Remove a todo from the list.
 
-Project Structure
-
-graphql
-
-my-project/
-│
-├── Dockerfile                # Dockerfile for Flask application
-├── docker-compose.yml        # Docker Compose configuration
-├── Database/
-│   ├── Dockerfile            # Dockerfile for MySQL database
-│   └── init.sql              # SQL script to initialize database
-└── app/
-    ├── Dockerfile            # Dockerfile for the Flask application
-    ├── requirements.txt      # Python dependencies
-    ├── app.py                # Main Flask application
-    ├── templates/            # HTML templates
-    │   ├── index.html
-    │   ├── home.html
-    │   └── last.html
-    └── static/               # Static files (e.g., CSS)
-        └── styles.css
 
 Prerequisites
 
@@ -39,15 +18,11 @@ Getting Started
 
     Clone the Repository:
 
-    bash
-
-git clone https://github.com/yourusername/your-repository.git
-cd your-repository
-
-Build and Start the Containers:
-
-bash
-
+    bash git clone https://github.com/abbisQQ/Todo-App.git
+    
+    cd the-repository
+    
+    Build and Start the Containers:
     docker-compose up --build
 
     This command will build Docker images for both the Flask application and the MySQL database, and start the containers.
@@ -88,6 +63,6 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 Contact
 
-For any questions or inquiries, please contact:
+For any questions or inquiries, please contact me at:
 
-    Your Name - your.email@example.com
+    chartheodorou@hotmail.com
