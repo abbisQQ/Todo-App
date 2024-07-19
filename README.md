@@ -58,11 +58,3 @@ Notes
 Contributing
 
 If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-Contact
-
-For any questions or inquiries, please contact me at:
-
-    chartheodorou@hotmail.com
